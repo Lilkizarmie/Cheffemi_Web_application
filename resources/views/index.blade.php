@@ -1,7 +1,6 @@
 @extends('layouts.main')
 
 @section('main-container')
-
     <!-- dynamic content -->
     <div id="sb-dynamic-content" class="sb-transition-fade">
 
@@ -496,5 +495,4 @@
         </div>
         </div>
         <!-- discount popup end -->
-
 @endsection
