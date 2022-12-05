@@ -72,7 +72,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-Route::get('/categories', function () {
+    Route::get('/categories', function () {
         return view('admin.categories');
-    })->name('categories');;
+    })->name('categories');
+    Route::get('/products', function () {
+        return view('admin.products');
+    })->name('products');
 });
