@@ -13,7 +13,12 @@
                         <button><i class="icon-magnifier"></i></button>
                     </form>
                 </div>
-                <div class="header__right"><a class="header__site-link" href="#"><span>View your store</span><i class="icon-exit-right"></i></a></div>
+                <div class="header__right">
+                    <a class="header__site-link" href="{{ url('/') }}">
+                        <span>View your store</span>
+                        <i class="icon-exit-right"></i>
+                    </a>
+                </div>
             </header>
             <section class="ps-dashboard">
                 <div class="ps-section__left">
