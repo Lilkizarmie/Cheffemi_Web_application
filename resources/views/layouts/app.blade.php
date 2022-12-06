@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <title>{{ config('app.name', 'Laravel') }}</title>
-
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
-
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-        <!-- Styles -->
-        @livewireStyles
-    </head>
-    <body class="font-sans antialiased">
-        <x-jet-banner />
-
-        <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-menu')
-
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
-
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="./admin/img/favicon.png" rel="apple-touch-icon">
+    <link href="./admin/img/favicon.png" rel="icon">
+    <title>Cheffemi Admin</title>
+    <link href="../../../css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('admin/plugins/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('fonts/Linearicons/Font/demo-files/demo.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/plugins/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/plugins/owl-carousel/assets/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/plugins/select2/dist/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/plugins/summernote/summernote-bs4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/plugins/apexcharts-bundle/dist/apexcharts.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/css/style.css') }}">
+</head>
+<body>
+    <main class="ps-main">
+      @livewire('navigation-menu')
+        <div class="ps-main__wrapper">
+        {{ $slot }}
         </div>
+    </main>
 
-        @stack('modals')
+    @stack('modals')
 
-        @livewireScripts
-    </body>
+    @livewireScripts
+    <script src="{{ asset('admin/plugins/jquery.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/popper.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/jquery.matchHeight-min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/select2/dist/js/select2.full.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/summernote/summernote-bs4.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/apexcharts-bundle/dist/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('admin/js/chart.js') }}"></script>
+    <!-- custom code-->
+    <script src="{{ asset('admin/js/main.js') }}"></script>
+</body>
+
 </html>

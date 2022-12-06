@@ -225,12 +225,12 @@
                 </div>
                 <div class="sb-minicart-footer">
                     <!-- button -->
-                    <a href="cart.html" class="sb-btn sb-btn-gray sb-btn-text">
+                    <a  href="{{ url('/cart') }}" class="sb-btn sb-btn-gray sb-btn-text">
                         <span>View order</span>
                     </a>
                     <!-- button end -->
                     <!-- button -->
-                    <a href="checkout.html" class="sb-btn sb-btn-text">
+                    <a href="{{ url('/checkout') }}" class="sb-btn sb-btn-text">
                         <span>Checkout</span>
                     </a>
                     <!-- button end -->
@@ -239,3 +239,5 @@
             <!-- minicart end -->
         </div>
         <!-- top bar end -->
+
+
