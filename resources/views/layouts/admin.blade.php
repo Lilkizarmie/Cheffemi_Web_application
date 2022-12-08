@@ -90,6 +90,9 @@
             </div>
         </div>
         @yield('main-container')
+        @stack('modals')
+
+        @livewireScripts
     </main>
 
 <script src="{{ asset('/plugins/jquery.min.js') }}"></script>

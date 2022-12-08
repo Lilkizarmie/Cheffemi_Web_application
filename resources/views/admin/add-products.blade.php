@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
 @section('main-container')
-  @livewire('category')
+  @livewire('add-product')
 
 @endsection

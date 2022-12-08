@@ -1,95 +1,105 @@
-<div class="p-6">
-    <div class="flex items-center px-4 py-3 text-right sm:px-6">
-        <x-jet-button wire:click="showModal">
-            {{ __('Add Category') }}
-        </x-jet-button>
-    </div>
-<!-- Datatables -->
-    <div class="flex flex-col">
-        <div class="my-2 overflow-x-auto sm:mx-6 lg:mx-8">
-            <div class="py-2 align-middle inline-block w-full sm:px-6 lg:px-8">
-                <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                    <table class="w-full divide-y divide-gray-200">
-                        <thead>
-                            <tr>
-                                <th class="px-6 py-3 bg-gray-100 text-center text-sm leading-4 font-medium text-gray-500 upercase tracking-wider">Name</th>
-                                <th class="px-6 py-3 bg-gray-100 text-center text-sm leading-4 font-medium text-gray-500 upercase tracking-wider">Created at</th>
-                                <th class="px-6 py-3 bg-gray-100 text-center text-sm leading-4 font-medium text-gray-500 upercase tracking-wider">Updated at</th>
-                                <th class="px-6 py-3 bg-gray-100 text-center text-sm leading-4 font-medium text-gray-500 upercase tracking-wider">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody class="bg-white divide-y divide-gray-200">
-                            @if ($data->count())
-                            @foreach ($data as $item)
-                            <tr>
-                                <td class="px-6 py-4 text-center text-base whitespace-no-wrap">{{ $item->name }}</td>
-                                <td class="px-6 py-4 text-center text-base whitespace-no-wrap">{{ $item->created_at }}</td>
-                                <td class="px-6 py-4 text-center text-base whitespace-no-wrap">{{ $item->updated_at }}</td>
-                                <td class="px-6 py-4 text-center text-base">
-                                    <x-jet-button wire:click="showUpdateModal({{ $item->id }})">
-                                        {{ __('Update') }}
-                                    </x-jet-button>
-<x-jet-danger-button class="ml-2" wire:click="showDeleteModal({{ $item->id }})" wire:loading.attr="disabled">
-                                        {{ __('Delete') }}
-                                    </x-jet-danger-button>
-                                </td>
-                            </tr>
-                            @endforeach
-                            @else
-                            <tr>
-                                <td class="px-6 py-4 text-center text-base whitespace-no-wrap" colspan="4">No Result Found</td>
-                            </tr>
-                            @endif
-</tbody>
-                    </table>
+        <div class="ps-main__wrapper">
+            <header class="header--dashboard">
+                <div class="header__left">
+                    <h3>Categories</h3>
+                    <p>Product Categories</p>
                 </div>
-            </div>
+                <div class="header__center">
+                    <form class="ps-form--search-bar" action="index.html" method="get">
+                        <input class="form-control" type="text" placeholder="Search something">
+                        <button><i class="icon-magnifier"></i></button>
+                    </form>
+                </div>
+                <div class="header__right"><a class="header__site-link" href="{{ url('/') }}"><span>View your store</span><i class="icon-exit-right"></i></a></div>
+            </header>
+            <section class="ps-items-listing">
+                <div class="ps-section__actions"><a class="ps-btn success" href="new-category.html"><i class="icon icon-plus mr-2"></i>{{ __('Add Category') }}</a></div>
+                <div class="ps-section__header">
+                    <div class="ps-section__filter">
+                        <form class="ps-form--filter" action="index.html" method="get">
+                            <div class="ps-form__left">
+                                <div class="form-group">
+                                    <select class="ps-select">
+                                        <option value="1">Status</option>
+                                        <option value="2">Active</option>
+                                        <option value="3">Inactive</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="ps-form__right">
+                                <button class="ps-btn ps-btn--gray"><i class="icon icon-funnel mr-2"></i>Filter</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ps-section__search">
+                        <form class="ps-form--search-simple" action="index.html" method="get">
+                            <input class="form-control" type="text" placeholder="Search Category">
+                            <button><i class="icon icon-magnifier"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="ps-section__content">
+                    <div class="table-responsive">
+                        <table class="table ps-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Stock</th>
+                                    <th>Date Created</th>
+                                    <th>Date Updated</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if ($data->count())
+                                @foreach ($data as $item)
+                                <tr>
+                                    <td>ABH-0</td>
+                                    <td><a href="#"><strong>{{ $item->name }}</strong></a></td>
+                                    <td>AB123456789-1</td>
+                                    <td><span class="ps-badge success">Stock</span>
+                                    </td>
+                                    <td>{{ $item->created_at }}</td>
+                                    <td>{{ $item->updated_at }}</td>
+                                    <td>
+                                        <div class="dropdown"><a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-ellipsis"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <button class="dropdown-item" wire:click="showUpdateModal({{ $item->id }})">{{ __('Update') }}</button>
+                                                <button class="dropdown-item" class="ml-2" wire:click="showDeleteModal({{ $item->id }})" wire:loading.attr="disabled">{{ __('Delete') }}</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                @endforeach
+                                @else
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="ps-section__footer">
+                    <p>No Result Found</p>
+                </div>
+                @endif
+            </section>
+            {{ $data->links() }}
         </div>
-    </div>
-<br />
-{{ $data->links() }}
-<!-- Show Modal -->
-    <x-jet-dialog-modal wire:model="visibleModalForm">
-        <x-slot name="title">
-            {{ __('Form Add Category') }}
+        <x-jet-dialog-modal wire:model="confirmDeleteModal">
+            <x-slot name="title">
+                {{ __('Delete Category') }}
+            </x-slot>
+        <x-slot name="content">
+                    {{ __('Are you sure you want to delete this Product Category data ? Once your data is deleted, all of its resources and data will be permanently deleted.') }}
+                </x-slot>
+        <x-slot name="footer">
+                    <x-jet-secondary-button wire:click="$toggle('confirmDeleteModal')">
+                        {{ __('Cancel') }}
+                    </x-jet-secondary-button>
+        <x-jet-danger-button class="ml-2" wire:click="delete" wire:loading.attr="disabled">
+                        {{ __('Delete') }}
+                    </x-jet-danger-button>
         </x-slot>
-<x-slot name="content">
-            <div class="mt-4">
-                <x-jet-label for="name" value="{{ __('Category Name') }}" />
-                <x-jet-input type=" text" class="mt-1 block w-3/4" placeholder="{{ __('Category Name') }}" wire:model.defer="name" />
-                <x-jet-input-error for="name" class="mt-2" />
-            </div>
-        </x-slot>
-<x-slot name="footer">
-            <x-jet-secondary-button wire:click="hideModal">
-                {{ __('Cancel') }}
-            </x-jet-secondary-button>
-@if ($modelId)
-            <x-jet-danger-button class="ml-2" wire:click="createOrUpdate" wire:loading.attr="disabled">
-                {{ __('Update Category') }}
-            </x-jet-danger-button>
-            @else
-            <x-jet-danger-button class="ml-2" wire:click="createOrUpdate" wire:loading.attr="disabled">
-                {{ __('Add Category') }}
-            </x-jet-danger-button>
-            @endif
-</x-slot>
-    </x-jet-dialog-modal>
-<!-- Show Delete Modal -->
-    <x-jet-dialog-modal wire:model="confirmDeleteModal">
-        <x-slot name="title">
-            {{ __('Delete Category') }}
-        </x-slot>
-<x-slot name="content">
-            {{ __('Are you sure you want to delete this Product Category data ? Once your data is deleted, all of its resources and data will be permanently deleted.') }}
-        </x-slot>
-<x-slot name="footer">
-            <x-jet-secondary-button wire:click="$toggle('confirmDeleteModal')">
-                {{ __('Cancel') }}
-            </x-jet-secondary-button>
-<x-jet-danger-button class="ml-2" wire:click="delete" wire:loading.attr="disabled">
-                {{ __('Delete') }}
-            </x-jet-danger-button>
-</x-slot>
-    </x-jet-dialog-modal>
-</div>
+            </x-jet-dialog-modal>
+    </main>
+    
