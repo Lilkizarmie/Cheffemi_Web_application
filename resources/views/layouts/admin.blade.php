@@ -51,32 +51,32 @@
                 <div class="ps-sidebar__content">
                     <div class="ps-sidebar__center">
                         <ul class="menu">
-                            <li class="@if (request()->is('/dashboard')) active @endif">
-                              <a href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"><i class="icon-home"></i>{{ __('Dashboard') }}
+                            <li >
+                              <a href="{{ route('dashboard') }}" class="@if (request()->is('dashboard')) active @endif"><i class="icon-home"></i>{{ __('Dashboard') }}
                               </a>
                             </li>
-                            <li class="@if (request()->is('/products')) @endif active">
-                              <a href="{{ route('products') }}" :active="request()->routeIs('products')"><i class="icon-database"></i>{{ __('Products') }}
+                            <li >
+                              <a href="{{ route('products') }}" class="@if (request()->is('products')) active @endif"><i class="icon-database"></i>{{ __('Products') }}
                               </a>
                             </li>
-                            <li class="@if (request()->is('/orders')) @endif active">
-                              <a href="{{ route('order') }}" :active="request()->routeIs('order')"><i class="icon-bag2"></i>{{ __('Order') }}
+                            <li>
+                              <a href="{{ route('order') }}" class="@if (request()->is('order')) active @endif"><i class="icon-bag2"></i>{{ __('Order') }}
                               </a>
                             </li>
-                            <li class="@if (request()->is('/customer')) @endif active">
-                              <a href="{{ route('customer') }}" :active="request()->routeIs('customer')"><i class="icon-users2"></i>{{ __('Customer') }}
+                            <li>
+                              <a href="{{ route('customer') }}" class="@if (request()->is('customer')) active @endif"><i class="icon-users2"></i>{{ __('Customer') }}
                               </a>
                             </li>
-                            <li class="@if (request()->is('/coupon')) @endif active">
-                              <a href="{{ route('coupon') }}" :active="request()->routeIs('coupon')"><i class="icon-percent-circle"></i>{{ __('Coupon') }}
+                            <li >
+                              <a href="{{ route('coupon') }}" class="@if (request()->is('coupon')) active @endif"><i class="icon-percent-circle"></i>{{ __('Coupon') }}
                               </a>
                             </li>
-                            <li class="@if (request()->is('/categories')) @endif active">
-                              <a href="{{ route('categories') }}" :active="request()->routeIs('categories')"><i class="icon-papers"></i>{{ __('Categories') }}
+                            <li>
+                              <a href="{{ route('categories') }}" class="@if (request()->is('categories')) active @endif"><i class="icon-papers"></i>{{ __('Categories') }}
                               </a>
                             </li>
-                            <li class="@if (request()->is('/setting')) @endif active">
-                              <a href="{{ route('setting') }}" :active="request()->routeIs('setting')"><i class="icon-cog"></i>{{ __('Setting') }}
+                            <li>
+                              <a href="{{ route('setting') }}" class="@if (request()->is('setting')) active @endif"><i class="icon-cog"></i>{{ __('Setting') }}
                               </a>
                             </li>
                         </ul>
