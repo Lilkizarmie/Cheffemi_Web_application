@@ -90,4 +90,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/coupons', function () {
         return view('admin.coupons');
     })->name('coupons');
+    Route::get('/add-categories', function () {
+        return view('admin.add-categories');
+    })->name('add-categories');
+    Route::get('/add-products', function () {
+        return view('admin.add-products');
+    })->name('add-products');
 });

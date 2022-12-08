@@ -13,7 +13,7 @@
                 <div class="header__right"><a class="header__site-link" href="{{ url('/') }}"><span>View your store</span><i class="icon-exit-right"></i></a></div>
             </header>
             <section class="ps-items-listing">
-                <div class="ps-section__actions"><a class="ps-btn success" href="new-category.html"><i class="icon icon-plus mr-2"></i>{{ __('Add Category') }}</a></div>
+                <div class="ps-section__actions"><a class="ps-btn success" href="{{ route('add-categories') }}"><i class="icon icon-plus mr-2"></i>{{ __('Add Category') }}</a></div>
                 <div class="ps-section__header">
                     <div class="ps-section__filter">
                         <form class="ps-form--filter" action="index.html" method="get">

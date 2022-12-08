@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->nullable();
             $table->float('price');
+            $table->string('sku');
+            $table->string('stock');
             $table->longText('description');
             $table->string('tags')->nullable();
             $table->bigInteger('categories_id');

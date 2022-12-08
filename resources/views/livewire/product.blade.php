@@ -13,11 +13,7 @@
                     <div class="header__right"><a class="header__site-link" href="{{ url('/') }}"><span>View your store</span><i class="icon-exit-right"></i></a></div>
                 </header>
                 <section class="ps-items-listing">
-                    <div class="ps-section__actions">
-                        <x-jet-button class="ps-btn success" wire:click="showModal">
-                            <i class="icon icon-plus mr-2"></i>{{ __('Add Product') }}
-                        </x-jet-button>
-                    </div>
+                    <div class="ps-section__actions"><a class="ps-btn success" href="{{ route('add-products') }}"><i class="icon icon-plus mr-2"></i>{{ __('Add Products') }}</a></div>
                     <div class="ps-section__header">
                         <div class="ps-section__filter">
                             <form class="ps-form--filter" action="index.html" method="get">
@@ -26,14 +22,6 @@
                                         <select class="ps-select">
                                             <option value="1">Select Category</option>
                                             <option value="2">Clothing & Apparel</option>
-                                            <option value="3">Clothing & Apparel</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="ps-select">
-                                            <option value="1">Product Type</option>
-                                            <option value="2">Simple Product</option>
-                                            <option value="3">Groupped product</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -66,8 +54,8 @@
                                         <th>SKU</th>
                                         <th>Stock</th>
                                         <th>Price</th>
-                                        <th>Categories</th>
-                                        <th>Date</th>
+                                        <th>Category</th>
+                                        <th>Date created</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -85,7 +73,7 @@
                                             <p class="ps-item-categories"><a href="#">Bags</a><a href="#">{{ $item->category->name }}</a>
                                             </p>
                                         </td>
-                                        <td>2019/11/06</td>
+                                        <td>{{ $item->created_at }}</td>
                                         <td>
                                             <div class="dropdown"><a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-ellipsis"></i></a>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item"  wire:click="showUpdateModal({{ $item->id }})">{{ __('Update') }}</a><a class="dropdown-item" wire:click="showDeleteModal({{ $item->id }})" wire:loading.attr="disabled">{{ __('Delete') }}</a></div>
