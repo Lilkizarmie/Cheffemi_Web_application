@@ -60,23 +60,23 @@
                               </a>
                             </li>
                             <li class="@if (request()->is('/orders')) @endif active">
-                              <a href="{{ route('orders') }}" :active="request()->routeIs('orders')"><i class="icon-bag2"></i>{{ __('Orders') }}
+                              <a href="{{ route('order') }}" :active="request()->routeIs('order')"><i class="icon-bag2"></i>{{ __('Order') }}
                               </a>
                             </li>
-                            <li class="@if (request()->is('/customers')) @endif active">
-                              <a href="{{ route('customers') }}" :active="request()->routeIs('customers')"><i class="icon-users2"></i>{{ __('Customers') }}
+                            <li class="@if (request()->is('/customer')) @endif active">
+                              <a href="{{ route('customer') }}" :active="request()->routeIs('customer')"><i class="icon-users2"></i>{{ __('Customer') }}
                               </a>
                             </li>
-                            <li class="@if (request()->is('/coupons')) @endif active">
-                              <a href="{{ route('coupons') }}" :active="request()->routeIs('coupons')"><i class="icon-percent-circle"></i>{{ __('Coupons') }}
+                            <li class="@if (request()->is('/coupon')) @endif active">
+                              <a href="{{ route('coupon') }}" :active="request()->routeIs('coupon')"><i class="icon-percent-circle"></i>{{ __('Coupon') }}
                               </a>
                             </li>
                             <li class="@if (request()->is('/categories')) @endif active">
                               <a href="{{ route('categories') }}" :active="request()->routeIs('categories')"><i class="icon-papers"></i>{{ __('Categories') }}
                               </a>
                             </li>
-                            <li class="@if (request()->is('/settings')) @endif active">
-                              <a href="{{ route('settings') }}" :active="request()->routeIs('settings')"><i class="icon-cog"></i>{{ __('Settings') }}
+                            <li class="@if (request()->is('/setting')) @endif active">
+                              <a href="{{ route('setting') }}" :active="request()->routeIs('setting')"><i class="icon-cog"></i>{{ __('Setting') }}
                               </a>
                             </li>
                         </ul>

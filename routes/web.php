@@ -78,18 +78,18 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/products', function () {
         return view('admin.products');
     })->name('products');
-    Route::get('/orders', function () {
-        return view('admin.orders');
-    })->name('orders');
-    Route::get('/customers', function () {
-        return view('admin.customers');
-    })->name('customers');
-    Route::get('/settings', function () {
-        return view('admin.settings');
-    })->name('settings');
-    Route::get('/coupons', function () {
-        return view('admin.coupons');
-    })->name('coupons');
+    Route::get('/order', function () {
+        return view('admin.order');
+    })->name('order');
+    Route::get('/customer', function () {
+        return view('admin.customer');
+    })->name('customer');
+    Route::get('/setting', function () {
+        return view('admin.setting');
+    })->name('setting');
+    Route::get('/coupon', function () {
+        return view('admin.coupon');
+    })->name('coupon');
     Route::get('/add-categories', function () {
         return view('admin.add-categories');
     })->name('add-categories');
