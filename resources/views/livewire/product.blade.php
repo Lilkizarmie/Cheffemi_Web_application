@@ -56,6 +56,7 @@
                                         <th>Price</th>
                                         <th>Category</th>
                                         <th>Date created</th>
+                                        <th>Date Updated</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -63,17 +64,14 @@
                                     @if ($data->count())
                                     @foreach ($data as $item)
                                     <tr>
-                                        <td>ABH-0</td>
-                                        <td><a href="#"><strong>{{ $item->name }}</strong></a></td>
-                                        <td>AB123456789-1</td>
-                                        <td><span class="ps-badge success">Stock</span>
-                                        </td>
+                                        <td>{{ $item->id }}</td>
+                                        <td>{{ $item->name }}</td>
+                                        <td>{{ $item->sku }}</td>
+                                        <td><span class="ps-badge success">{{ $item->Stock }}</span></td>
                                         <td><strong>{{ $item->price }}</strong></td>
-                                        <td>
-                                            <p class="ps-item-categories"><a href="#">Bags</a><a href="#">{{ $item->category->name }}</a>
-                                            </p>
-                                        </td>
+                                        <td>{{ $item->category->name }}</td>
                                         <td>{{ $item->created_at }}</td>
+                                        <td>{{ $item->updated_at }}</td>
                                         <td>
                                             <div class="dropdown"><a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-ellipsis"></i></a>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item"  wire:click="showUpdateModal({{ $item->id }})">{{ __('Update') }}</a><a class="dropdown-item" wire:click="showDeleteModal({{ $item->id }})" wire:loading.attr="disabled">{{ __('Delete') }}</a></div>

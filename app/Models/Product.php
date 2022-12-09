@@ -17,6 +17,7 @@ class Product extends Model
         'description',
         'categories_id',
         'tags',
+        
     ];
 
     public function galleries()

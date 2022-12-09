@@ -56,10 +56,10 @@
                                 @if ($data->count())
                                 @foreach ($data as $item)
                                 <tr>
-                                    <td>ABH-0</td>
-                                    <td><a href="#"><strong>{{ $item->name }}</strong></a></td>
-                                    <td>AB123456789-1</td>
-                                    <td><span class="ps-badge success">Stock</span>
+                                    <td>{{ $item->id }}</td>
+                                    <td>{{ $item->name }}</td>
+                                    <td>{{ $item->desc }}</td>
+                                    <td><span class="ps-badge success">{{ $item->stock }}</span>
                                     </td>
                                     <td>{{ $item->created_at }}</td>
                                     <td>{{ $item->updated_at }}</td>

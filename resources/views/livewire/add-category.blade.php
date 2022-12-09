@@ -23,17 +23,22 @@
                                     <div class="form-group">
                                         <label>Category Name<sup>*</sup>
                                         </label>
-                                        <input class="form-control" type="text" placeholder="Enter product name...">
+                                        <input class="form-control" type="text" placeholder="Enter category name..." wire:model.defer="name">
                                     </div>
-                                    <div class="form-group">
-                                        <label>Reference<sup>*</sup>
+                                    <div class="form-group form-group--select">
+                                        <label>Status<sup>*</sup>
                                         </label>
-                                        <input class="form-control" type="text" placeholder="Enter product Reference...">
+                                        <div class="form-group__content">
+                                            <select class="ps-select" title="Status">
+                                                <option value="1">Active</option>
+                                                <option value="2">InActive</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label>Category Summary<sup>*</sup>
                                         </label>
-                                        <textarea class="form-control" rows="6" placeholder="Enter product description..."></textarea>
+                                        <textarea class="form-control" rows="6" placeholder="Enter product description..." wire:model.defer="description"></textarea>
                                     </div>
                                 </div>
                             </figure>
@@ -45,42 +50,26 @@
                                     <div class="form-group">
                                         <label>Category Thumbnail</label>
                                         <div class="form-group--nest">
-                                            <input class="form-control mb-1" type="text" placeholder="">
+                                            <input class="form-control mb-1" type="text" placeholder="" wire:model.defer="thumbnail">
                                             <button class="ps-btn ps-btn--sm">Choose</button>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label>Tags
                                         </label>
-                                        <input class="form-control" type="text" placeholder="Category tags">
-                                    </div>
-                                </div>
-                            </figure>
-                            <figure class="ps-block--form-box">
-                                <figcaption>Inventory</figcaption>
-                                <div class="ps-block__content">
-                                    <div class="form-group">
-                                        <label>SKU<sup>*</sup>
-                                        </label>
-                                        <input class="form-control" type="text" placeholder="">
-                                    </div>
-                                    <div class="form-group form-group--select">
-                                        <label>Status
-                                        </label>
-                                        <div class="form-group__content">
-                                            <select class="ps-select" title="Status">
-                                                <option value="1">Active</option>
-                                                <option value="2">InActive</option>
-                                            </select>
-                                        </div>
+                                        <input class="form-control" type="text" placeholder="Category tags" wire:model="tags">
                                     </div>
                                 </div>
                             </figure>
                         </div>
                     </div>
                 </div>
-                <div class="ps-form__bottom"><a class="ps-btn ps-btn--black" href="products.html">Back</a>
-                    <button class="ps-btn">Submit</button>
+                <div class="ps-form__bottom"><a class="ps-btn ps-btn--black" href="{{ route('categories') }}">{{ __('Cancel') }}</a>
+                    @if ($modelId)
+                    <button class="ps-btn ps-btn--gray" wire:click="createOrUpdate" wire:loading.attr="disabled">{{ __('Update Category') }}</button>
+                    @else
+                    <button class="ps-btn" wire:click="createOrUpdate" wire:loading.attr="disabled">{{ __('Add Category') }}</button>
+                    @endif
                 </div>
             </form>
         </section>

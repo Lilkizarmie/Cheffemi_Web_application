@@ -23,41 +23,43 @@
                                     <div class="form-group">
                                         <label>Product Name<sup>*</sup>
                                         </label>
-                                        <input class="form-control" type="text" placeholder="Enter product name...">
+                                        <input class="form-control" type="text" placeholder="Enter product name..." wire:model="name">
                                     </div>
-                                    <div class="form-group">
-                                        <label>Reference<sup>*</sup>
+                                    <div class="form-group form-group--select">
+                                        <label>Category<sup>*</sup>
                                         </label>
-                                        <input class="form-control" type="text" placeholder="Enter product Reference...">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Product Summary<sup>*</sup>
-                                        </label>
-                                        <textarea class="form-control" rows="6" placeholder="Enter product description..."></textarea>
+                                        <div class="form-group__content">
+                                            <select class="ps-select" title="Brand">
+                                                <option selected>-- Choose Categories --</option>
+                                                @if($categories)
+                                                @foreach($categories as $cat)
+                                                @if($cat->id == $categories_id)
+                                                <option value="{{ $cat->id }}" selected>{{ $cat->name }}</option>
+                                                @else
+                                                <option value="{{ $cat->id }}">{{ $cat->name }}</option>
+                                                @endif
+                                                @endforeach
+                                                @endif
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label>Regular Price<sup>*</sup>
                                         </label>
-                                        <input class="form-control" type="text" placeholder="">
+                                        <input class="form-control" type="text" placeholder="Price" wire:model.defer="reg_price">
                                     </div>
                                     <div class="form-group">
-                                        <label>Sale Price<sup>*</sup>
-                                        </label>
-                                        <input class="form-control" type="text" placeholder="">
+                                        <label>Sale Price</label>
+                                        <input class="form-control" type="text" placeholder="" wire:model.defer="sale_price">
                                     </div>
                                     <div class="form-group">
                                         <label>Sale Quantity<sup>*</sup>
                                         </label>
-                                        <input class="form-control" type="text" placeholder="">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Sold Items<sup>*</sup>
-                                        </label>
-                                        <input class="form-control" type="text" placeholder="">
+                                        <input class="form-control" type="text" placeholder="Input quantity" wire:model.defer="stock">
                                     </div>
                                     <div class="form-group">
                                         <label>Product Description<sup>*</sup></label>
-                                        <textarea id="summernote" rows="6" name="editordata"></textarea>
+                                        <textarea id="summernote" rows="6" name="editordata" wire:model.defer="description"></textarea>
                                     </div>
                                 </div>
                             </figure>
@@ -69,25 +71,20 @@
                                     <div class="form-group">
                                         <label>Product Thumbnail</label>
                                         <div class="form-group--nest">
-                                            <input class="form-control mb-1" type="text" placeholder="">
+                                            <input class="form-control mb-1" type="text" placeholder="" wire:model.defer="thumbnail">
                                             <button class="ps-btn ps-btn--sm">Choose</button>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label>Product Gallery</label>
                                         <div class="form-group--nest">
-                                            <input class="form-control mb-1" type="text" placeholder="">
+                                            <input class="form-control mb-1" type="text" placeholder="" wire:model.defer="image_gallery1">
                                             <button class="ps-btn ps-btn--sm">Choose</button>
                                         </div>
                                     </div>
                                     <div class="form-group form-group--nest">
-                                        <input class="form-control mb-1" type="text" placeholder="">
+                                        <input class="form-control mb-1" type="text" placeholder="" wire:model.defer="image_gallery2">
                                         <button class="ps-btn ps-btn--sm">Choose</button>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Video (optional)
-                                        </label>
-                                        <input class="form-control" type="text" placeholder="Enter video URL">
                                     </div>
                                 </div>
                             </figure>
@@ -99,48 +96,32 @@
                                         </label>
                                         <input class="form-control" type="text" placeholder="">
                                     </div>
-                                    <div class="form-group form-group--select">
-                                        <label>Status
-                                        </label>
-                                        <div class="form-group__content">
-                                            <select class="ps-select" title="Status">
-                                                <option value="1">Status 1</option>
-                                                <option value="2">Status 2</option>
-                                                <option value="3">Status 3</option>
-                                                <option value="4">Status 4</option>
-                                            </select>
-                                        </div>
-                                    </div>
                                 </div>
                             </figure>
                             <figure class="ps-block--form-box">
                                 <figcaption>Meta</figcaption>
                                 <div class="ps-block__content">
-                                    <div class="form-group form-group--select">
-                                        <label>Brand
-                                        </label>
-                                        <div class="form-group__content">
-                                            <select class="ps-select" title="Brand">
-                                                <option value="1">Brand 1</option>
-                                                <option value="2">Brand 2</option>
-                                                <option value="3">Brand 3</option>
-                                                <option value="4">Brand 4</option>
-                                            </select>
-                                        </div>
-                                    </div>
                                     <div class="form-group">
                                         <label>Tags
                                         </label>
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" type="text" wire:model="tags">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Slug
+                                        </label>
+                                        <input class="form-control" type="text" wire:model="slug" placeholder="url-slug" readonly>
                                     </div>
                                 </div>
                             </figure>
                         </div>
                     </div>
                 </div>
-                <div class="ps-form__bottom"><a class="ps-btn ps-btn--black" href="products.html">Back</a>
-                    <button class="ps-btn ps-btn--gray">Cancel</button>
-                    <button class="ps-btn">Submit</button>
+                <div class="ps-form__bottom"><a class="ps-btn ps-btn--black" href="{{ route('products') }}">{{ __('Cancel') }}</a>
+                    @if ($modelId)
+                    <button class="ps-btn ps-btn--gray" wire:click="createOrUpdate" wire:loading.attr="disabled"> {{ __('Update Product') }}</button>
+                    @else
+                    <button class="ps-btn" wire:click="createOrUpdate" wire:loading.attr="disabled">{{ __('Add Product') }}</button>
+                    @endif
                 </div>
             </form>
         </section>

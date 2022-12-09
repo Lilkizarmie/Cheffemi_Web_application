@@ -17,10 +17,14 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug')->nullable();
-            $table->float('price');
+            $table->float('reg_price');
+            $table->float('sale_price');
             $table->string('sku');
             $table->string('stock');
             $table->longText('description');
+            $table->string('thumbnail');
+            $table->string('image_gallery1');
+            $table->string('image_gallery2');
             $table->string('tags')->nullable();
             $table->bigInteger('categories_id');
             $table->softDeletes();

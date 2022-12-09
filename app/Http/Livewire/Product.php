@@ -7,8 +7,6 @@ use Livewire\WithPagination;
 class Product extends Component
 {
     use WithPagination;
-    public $visibleModalForm = false;
-    public $confirmDeleteModal = false;
     public $name;
     public $price;
     public $description;
@@ -50,20 +48,7 @@ class Product extends Component
     {
         ModelsProduct::destroy($this->modelId);
         $this->confirmDeleteModal = false;
-    }
-    public function showUpdateModal($id)
-    {
-        $this->resetValidation();
-        $this->resetFields();
-        $this->modelId = $id;
-        $this->visibleModalForm = true;
-        $this->loadModel();
-    }
-    public function showDeleteModal($id)
-    {
-        $this->modelId = $id;
-        $this->confirmDeleteModal = true;
-    }
+    } 
     public function loadModel()
     {
         $data = ModelsProduct::findOrFail($this->modelId);
