@@ -18,38 +18,27 @@
                     <div class="col-md-4">
                         <div class="ps-card ps-card--order-information ps-card--small">
                             <div class="ps-card__header">
-                                <h4>Shipping Information</h4>
+                                <h4>Customer Information</h4>
                             </div>
                             <div class="ps-card__content">
                                 <h5>John Doe</h5>
                                 <p><strong>Address:</strong> 117-195 Iroquois Ave London, ON N6C 2K9</p>
-                                <p><strong>Phone No.:</strong> (+998) 117-211-31</p>
-                                <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6c5d3d5d2c9cbc3d4e6cbc7d4d2c0d3d4df88c5c9cb">[email&#160;protected]</a></p>
+                                <p><strong>Phone No:</strong> (+998) 117-211-31</p>
+                                <p><strong>Email:</strong> </p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <div class="ps-card ps-card--order-information ps-card--small">
                             <div class="ps-card__header">
-                                <h4>Billing Information</h4>
-                            </div>
-                            <div class="ps-card__content">
-                                <p><strong>Payment Type:</strong> Visa</p>
-                                <p><strong>Provider:</strong> **** **** **** *2121</p>
-                                <p><strong>Valid Date:</strong> 02-2025</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="ps-card ps-card--order-information ps-card--small">
-                            <div class="ps-card__header">
-                                <h4>Shipping Information</h4>
+                                <h4>Delivery Information</h4>
                             </div>
                             <div class="ps-card__content">
                                 <h5>John Doe</h5>
                                 <p><strong>Address:</strong> 117-195 Iroquois Ave London, ON N6C 2K9</p>
-                                <p><strong>Phone No.:</strong> (+998) 117-211-31</p>
-                                <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c5a6b0b6b1aaa8a0b785a8a4b7b1a3b0b7bceba6aaa8">[email&#160;protected]</a></p>
+                                <p><strong>Phone No:</strong> (+998) 117-211-31</p>
+                                <p><strong>Email:</strong> </p>
                             </div>
                         </div>
                     </div>
