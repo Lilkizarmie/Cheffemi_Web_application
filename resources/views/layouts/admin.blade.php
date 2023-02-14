@@ -60,11 +60,11 @@
                               </a>
                             </li>
                             <li>
-                              <a href="{{ route('order') }}" class="@if (request()->is('order')) active @endif"><i class="icon-bag2"></i>{{ __('Order') }}
+                              <a href="{{ route('order') }}" class="@if (request()->is('order')) active @endif"><i class="icon-bag2"></i>{{ __('Orders') }}
                               </a>
                             </li>
                             <li>
-                              <a href="{{ route('customer') }}" class="@if (request()->is('customer')) active @endif"><i class="icon-users2"></i>{{ __('Customer') }}
+                              <a href="{{ route('customer') }}" class="@if (request()->is('customer')) active @endif"><i class="icon-users2"></i>{{ __('Customers') }}
                               </a>
                             </li>
                             <li >
@@ -76,7 +76,7 @@
                               </a>
                             </li>
                             <li>
-                              <a href="{{ route('setting') }}" class="@if (request()->is('setting')) active @endif"><i class="icon-cog"></i>{{ __('Setting') }}
+                              <a href="{{ route('setting') }}" class="@if (request()->is('setting')) active @endif"><i class="icon-cog"></i>{{ __('Settings') }}
                               </a>
                             </li>
                         </ul>

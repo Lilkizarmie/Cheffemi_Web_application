@@ -29,7 +29,7 @@
                                         <label>Category<sup>*</sup>
                                         </label>
                                         <div class="form-group__content">
-                                            <select class="ps-select" title="Brand">
+                                            {{-- <select class="ps-select" title="Brand">
                                                 <option selected>-- Choose Categories --</option>
                                                 @if($categories)
                                                 @foreach($categories as $cat)
@@ -40,7 +40,7 @@
                                                 @endif
                                                 @endforeach
                                                 @endif
-                                            </select>
+                                            </select> --}}
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -71,20 +71,23 @@
                                     <div class="form-group">
                                         <label>Product Thumbnail</label>
                                         <div class="form-group--nest">
-                                            <input class="form-control mb-1" type="text" placeholder="" wire:model.defer="thumbnail">
-                                            <button class="ps-btn ps-btn--sm">Choose</button>
+                                            {{-- <input class="form-control mb-1" type="text" placeholder="" wire:model.defer="thumbnail">
+                                            <button class="ps-btn ps-btn--sm">Choose</button> --}}
+                                            <input type="file" accept="image/*" class="form-control mb-1" type="text" placeholder="" wire:model.defer="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label>Product Gallery</label>
                                         <div class="form-group--nest">
-                                            <input class="form-control mb-1" type="text" placeholder="" wire:model.defer="image_gallery1">
-                                            <button class="ps-btn ps-btn--sm">Choose</button>
+                                            {{-- <input class="form-control mb-1" type="text" placeholder="" wire:model.defer="image_gallery1">
+                                            <button class="ps-btn ps-btn--sm">Choose</button> --}}
+                                            <input type="file" accept="image/*" class="form-control mb-1" type="text" placeholder="" wire:model.defer="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group form-group--nest">
-                                        <input class="form-control mb-1" type="text" placeholder="" wire:model.defer="image_gallery2">
-                                        <button class="ps-btn ps-btn--sm">Choose</button>
+                                        {{-- <input class="form-control mb-1" type="file" accept="image/*" wire:model.defer="image_gallery2">
+                                        <button class="ps-btn ps-btn--sm">Choose</button> --}}
+                                        <input type="file" accept="image/*" class="form-control mb-1" type="text" placeholder="" wire:model.defer="thumbnail">
                                     </div>
                                 </div>
                             </figure>
@@ -106,23 +109,23 @@
                                         </label>
                                         <input class="form-control" type="text" wire:model="tags">
                                     </div>
-                                    <div class="form-group">
+                                    {{-- <div class="form-group">
                                         <label>Slug
                                         </label>
                                         <input class="form-control" type="text" wire:model="slug" placeholder="url-slug" readonly>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </figure>
                         </div>
                     </div>
                 </div>
-                <div class="ps-form__bottom"><a class="ps-btn ps-btn--black" href="{{ route('products') }}">{{ __('Cancel') }}</a>
+                {{-- <div class="ps-form__bottom"><a class="ps-btn ps-btn--black" href="{{ route('products') }}">{{ __('Cancel') }}</a>
                     @if ($modelId)
                     <button class="ps-btn ps-btn--gray" wire:click="createOrUpdate" wire:loading.attr="disabled"> {{ __('Update Product') }}</button>
                     @else
                     <button class="ps-btn" wire:click="createOrUpdate" wire:loading.attr="disabled">{{ __('Add Product') }}</button>
                     @endif
-                </div>
+                </div> --}}
             </form>
         </section>
     </div>
