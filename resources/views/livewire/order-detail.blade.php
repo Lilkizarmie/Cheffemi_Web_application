@@ -133,7 +133,7 @@
                                         <p>Sep 19, 2020 <small>10:00am</small></p>
                                     </figure>
                                     <figure class="active">
-                                        <figcaption>Shipped</figcaption>
+                                        <figcaption>Dispatched</figcaption>
                                         <p>Sep 19, 2020 <small>4:00pm</small></p>
                                     </figure>
                                     <figure>
