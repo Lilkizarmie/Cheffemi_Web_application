@@ -19,7 +19,7 @@
                   <h1 class="sb-mb-30">We do not <span>cook</span>, <br>we <span>create</span> your <br>emotions!</h1>
                   <p class="sb-text sb-text-lg sb-mb-30">Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.</p>
                   <!-- button -->
-                  <a href="menu.html" class="sb-btn">
+                  <a href="/menu" class="sb-btn">
                     <span class="sb-icon">
                       <img src="img/ui/icons/menu.svg" alt="icon">
                     </span>
@@ -27,7 +27,7 @@
                   </a>
                   <!-- button end -->
                   <!-- button -->
-                  <a href="about.html" class="sb-btn sb-btn-2 sb-btn-gray">
+                  <a href="/about" class="sb-btn sb-btn-2 sb-btn-gray">
                     <span class="sb-icon">
                       <img src="img/ui/icons/arrow.svg" alt="icon">
                     </span>
@@ -175,7 +175,7 @@
               </div>
               <!-- slider navigation end -->
               <!-- button -->
-              <a href="menu.html" class="sb-btn">
+              <a href="/menu" class="sb-btn">
                 <span class="sb-icon">
                   <img src="img/ui/icons/menu.svg" alt="icon">
                 </span>
@@ -316,7 +316,7 @@
               </div>
               <!-- slider navigation end -->
               <!-- button -->
-              <a href="reviews.html" class="sb-btn">
+              <a href="/reviews" class="sb-btn">
                 <span class="sb-icon">
                   <img src="img/ui/icons/dialog.svg" alt="icon">
                 </span>
@@ -431,7 +431,7 @@
                 <h2 class="sb-h1 sb-mb-15">Free delivery service.</h2>
                 <p class="sb-text sb-mb-30">*Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.</p>
                 <!-- button -->
-                <a href="shop.html" class="sb-btn">
+                <a href="/shop" class="sb-btn">
                   <span class="sb-icon">
                     <img src="img/ui/icons/cart.svg" alt="icon">
                   </span>
@@ -439,7 +439,7 @@
                 </a>
                 <!-- button end -->
                 <!-- button -->
-                <a href="menu.html" class="sb-btn sb-btn-2 sb-btn-gray">
+                <a href="/menu" class="sb-btn sb-btn-2 sb-btn-gray">
                   <span class="sb-icon">
                     <img src="img/ui/icons/menu.svg" alt="icon">
                   </span>
@@ -475,7 +475,7 @@
               <h3 class="sb-mb-15">Discount for all* burgers!</h3>
               <p class="sb-text sb-text-sm sb-mb-10">*Et modi itaque praesentium.</p>
               <!-- button -->
-              <a href="product.html" class="sb-btn sb-ppc">
+              <a href="/product" class="sb-btn sb-ppc">
                 <span class="sb-icon">
                   <img src="img/ui/icons/arrow.svg" alt="icon">
                 </span>

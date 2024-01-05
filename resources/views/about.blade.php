@@ -172,7 +172,7 @@
             </div>
             <div class="sb-right sb-mb-30">
               <!-- button -->
-              <a href="menu-1.html" class="sb-btn sb-m-0">
+              <a href="/menu" class="sb-btn sb-m-0">
                 <span class="sb-icon">
                   <img src="img/ui/icons/menu.svg" alt="icon">
                 </span>
@@ -253,7 +253,7 @@
               </div>
               <!-- slider navigation end -->
               <!-- button -->
-              <a href="reviews.html" class="sb-btn">
+              <a href="/reviews" class="sb-btn">
                 <span class="sb-icon">
                   <img src="img/ui/icons/dialog.svg" alt="icon">
                 </span>

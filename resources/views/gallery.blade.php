@@ -180,10 +180,10 @@
           <div>
             <ul class="sb-pagination">
               <li class="sb-active"><a href="#.">1</a></li>
-              <li><a href="gallery-2.html">2</a></li>
-              <li><a href="gallery-2.html">3</a></li>
-              <li><a href="gallery-2.html">4</a></li>
-              <li><a href="gallery-2.html">...</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li><a href="">...</a></li>
             </ul>
           </div>
         </div>

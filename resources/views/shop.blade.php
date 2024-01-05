@@ -32,7 +32,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
-              <a href="shop-list-1.html" class="sb-categorie-card sb-categorie-card-2 sb-mb-30">
+              <a href="" class="sb-categorie-card sb-categorie-card-2 sb-mb-30">
                 <div class="sb-card-body">
                   <div class="sb-category-icon">
                     <img src="img/categories/1.png" alt="icon">
@@ -45,7 +45,7 @@
               </a>
             </div>
             <div class="col-lg-6">
-              <a href="shop-list-1.html" class="sb-categorie-card sb-categorie-card-2 sb-mb-30">
+              <a href="" class="sb-categorie-card sb-categorie-card-2 sb-mb-30">
                 <div class="sb-card-body">
                   <div class="sb-category-icon">
                     <img src="img/categories/2.png" alt="icon">
@@ -58,7 +58,7 @@
               </a>
             </div>
             <div class="col-lg-6">
-              <a href="shop-list-1.html" class="sb-categorie-card sb-categorie-card-2 sb-mb-30">
+              <a href="" class="sb-categorie-card sb-categorie-card-2 sb-mb-30">
                 <div class="sb-card-body">
                   <div class="sb-category-icon">
                     <img src="img/categories/3.png" alt="icon">
@@ -71,7 +71,7 @@
               </a>
             </div>
             <div class="col-lg-6">
-              <a href="shop-list-1.html" class="sb-categorie-card sb-categorie-card-2 sb-mb-30">
+              <a href="" class="sb-categorie-card sb-categorie-card-2 sb-mb-30">
                 <div class="sb-card-body">
                   <div class="sb-category-icon">
                     <img src="img/categories/4.png" alt="icon">
@@ -107,7 +107,7 @@
               </div>
               <!-- slider navigation end -->
               <!-- button -->
-              <a href="shop-list-1.html" class="sb-btn">
+              <a href="" class="sb-btn">
                 <span class="sb-icon">
                   <img src="img/ui/icons/arrow.svg" alt="icon">
                 </span>
@@ -120,7 +120,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/1.jpg" alt="product">
                   </a>
                   <div class="sb-card-tp">
@@ -132,7 +132,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -152,12 +152,12 @@
               </div>
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/2.jpg" alt="product">
                     <div class="sb-badge sb-vegan"><i class="fas fa-leaf"></i> Vegan</div>
                   </a>
                   <div class="sb-card-tp">
-                    <h4 class="sb-card-title"><a href="product.html">Saumon Gravlax</a></h4>
+                    <h4 class="sb-card-title"><a href="/product">Saumon Gravlax</a></h4>
                     <div class="sb-price"><sub>$</sub> 9</div>
                   </div>
                   <div class="sb-description">
@@ -165,7 +165,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -185,7 +185,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/3.jpg" alt="product">
                   </a>
                   <div class="sb-card-tp">
@@ -197,7 +197,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -217,11 +217,11 @@
               </div>
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/4.jpg" alt="product">
                   </a>
                   <div class="sb-card-tp">
-                    <h4 class="sb-card-title"><a href="product.html">Croustillant de poisson</a></h4>
+                    <h4 class="sb-card-title"><a href="/product">Croustillant de poisson</a></h4>
                     <div class="sb-price"><sub>$</sub> 4</div>
                   </div>
                   <div class="sb-description">
@@ -229,7 +229,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -249,11 +249,11 @@
               </div>
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/5.jpg" alt="product">
                   </a>
                   <div class="sb-card-tp">
-                    <h4 class="sb-card-title"><a href="product.html">Carpaccio de daurade</a></h4>
+                    <h4 class="sb-card-title"><a href="/product">Carpaccio de daurade</a></h4>
                     <div class="sb-price"><sub>$</sub> 6</div>
                   </div>
                   <div class="sb-description">
@@ -261,7 +261,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -281,11 +281,11 @@
               </div>
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/6.jpg" alt="product">
                   </a>
                   <div class="sb-card-tp">
-                    <h4 class="sb-card-title"><a href="product.html">Chevrefrit au miel</a></h4>
+                    <h4 class="sb-card-title"><a href="/product">Chevrefrit au miel</a></h4>
                     <div class="sb-price"><sub>$</sub> 14</div>
                   </div>
                   <div class="sb-description">
@@ -293,7 +293,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -336,7 +336,7 @@
               </div>
               <!-- slider navigation end -->
               <!-- button -->
-              <a href="shop-list-1.html" class="sb-btn">
+              <a href="/all-products" class="sb-btn">
                 <span class="sb-icon">
                   <img src="img/ui/icons/arrow.svg" alt="icon">
                 </span>
@@ -349,11 +349,11 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/10.jpg" alt="product">
                   </a>
                   <div class="sb-card-tp">
-                    <h4 class="sb-card-title"><a href="product.html">Croustillant de poisson</a></h4>
+                    <h4 class="sb-card-title"><a href="/product">Croustillant de poisson</a></h4>
                     <div class="sb-price"><sub>$</sub> 14</div>
                   </div>
                   <div class="sb-description">
@@ -361,7 +361,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -381,11 +381,11 @@
               </div>
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/6.jpg" alt="product">
                   </a>
                   <div class="sb-card-tp">
-                    <h4 class="sb-card-title"><a href="product.html">Chevrefrit au miel</a></h4>
+                    <h4 class="sb-card-title"><a href="/product">Chevrefrit au miel</a></h4>
                     <div class="sb-price"><sub>$</sub> 14</div>
                   </div>
                   <div class="sb-description">
@@ -393,7 +393,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -413,12 +413,12 @@
               </div>
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/7.jpg" alt="product">
                     <div class="sb-badge sb-vegan"><i class="fas fa-leaf"></i> Vegan</div>
                   </a>
                   <div class="sb-card-tp">
-                    <h4 class="sb-card-title"><a href="product.html">Saumon Gravlax</a></h4>
+                    <h4 class="sb-card-title"><a href="/product">Saumon Gravlax</a></h4>
                     <div class="sb-price"><sub>$</sub> 9</div>
                   </div>
                   <div class="sb-description">
@@ -426,7 +426,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -446,11 +446,11 @@
               </div>
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/8.jpg" alt="product">
                   </a>
                   <div class="sb-card-tp">
-                    <h4 class="sb-card-title"><a href="product.html">Stracciatella</a></h4>
+                    <h4 class="sb-card-title"><a href="/product">Stracciatella</a></h4>
                     <div class="sb-price"><sub>$</sub> 9</div>
                   </div>
                   <div class="sb-description">
@@ -458,7 +458,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -478,11 +478,11 @@
               </div>
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/9.jpg" alt="product">
                   </a>
                   <div class="sb-card-tp">
-                    <h4 class="sb-card-title"><a href="product.html">Croustillant de poisson</a></h4>
+                    <h4 class="sb-card-title"><a href="/product">Croustillant de poisson</a></h4>
                     <div class="sb-price"><sub>$</sub> 4</div>
                   </div>
                   <div class="sb-description">
@@ -490,7 +490,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -510,11 +510,11 @@
               </div>
               <div class="swiper-slide">
                 <div class="sb-menu-item">
-                  <a href="product.html" class="sb-cover-frame">
+                  <a href="/product" class="sb-cover-frame">
                     <img src="img/menu/10.jpg" alt="product">
                   </a>
                   <div class="sb-card-tp">
-                    <h4 class="sb-card-title"><a href="product.html">Carpaccio de daurade</a></h4>
+                    <h4 class="sb-card-title"><a href="/product">Carpaccio de daurade</a></h4>
                     <div class="sb-price"><sub>$</sub> 6</div>
                   </div>
                   <div class="sb-description">
@@ -522,7 +522,7 @@
                   </div>
                   <div class="sb-card-buttons-frame">
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
+                    <a href="/product" class="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -556,7 +556,7 @@
             </div>
             <div class="sb-right sb-mb-30">
               <!-- button -->
-              <a href="about-1.html" class="sb-btn sb-m-0">
+              <a href="/about" class="sb-btn sb-m-0">
                 <span class="sb-icon">
                   <img src="img/ui/icons/arrow.svg" alt="icon">
                 </span>
@@ -651,7 +651,7 @@
                     <h3 class="sb-mb-15">Discount for all* burgers!</h3>
                     <p class="sb-text sb-text-sm sb-mb-15">*Et modi itaque praesentium.</p>
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-ppc">
+                    <a href="/product" class="sb-btn sb-ppc">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>
@@ -678,7 +678,7 @@
                     <h3 class="sb-mb-10"><b class="sb-h2">For free!</b></h3>
                     <p class="sb-text sb-text-sm sb-mb-15">*Et modi itaque praesentium.</p>
                     <!-- button -->
-                    <a href="product.html" class="sb-btn sb-ppc">
+                    <a href="/product" class="sb-btn sb-ppc">
                       <span class="sb-icon">
                         <img src="img/ui/icons/arrow.svg" alt="icon">
                       </span>

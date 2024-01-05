@@ -46,7 +46,7 @@
               <div class="sb-masonry-grid">
                 <div class="sb-grid-sizer"></div>
                 <div class="sb-grid-item sb-item-50">
-                  <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                  <a href="/blog-details" class="sb-blog-card sb-mb-30">
                     <div class="sb-cover-frame sb-cover-vert sb-mb-30">
                       <img src="img/blog/3.jpg" alt="cover">
                       <div class="sb-badge">New</div>
@@ -59,7 +59,7 @@
                   </a>
                 </div>
                 <div class="sb-grid-item sb-item-50">
-                  <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                  <a href="/blog-details" class="sb-blog-card sb-mb-30">
                     <div class="sb-cover-frame sb-mb-30">
                       <img src="img/blog/2.jpg" alt="cover">
                     </div>
@@ -71,7 +71,7 @@
                   </a>
                 </div>
                 <div class="sb-grid-item sb-item-50">
-                  <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                  <a href="/blog-details" class="sb-blog-card sb-mb-30">
                     <div class="sb-cover-frame sb-cover-vert sb-mb-30">
                       <img src="img/blog/1.jpg" alt="cover">
                       <div class="sb-badge">Popular</div>
@@ -84,7 +84,7 @@
                   </a>
                 </div>
                 <div class="sb-grid-item sb-item-50">
-                  <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                  <a href="/blog-details" class="sb-blog-card sb-mb-30">
                     <div class="sb-cover-frame sb-mb-30">
                       <img src="img/blog/4.jpg" alt="cover">
                       <div class="sb-badge">Popular</div>
@@ -97,7 +97,7 @@
                   </a>
                 </div>
                 <div class="sb-grid-item sb-item-50">
-                  <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                  <a href="/blog-details" class="sb-blog-card sb-mb-30">
                     <div class="sb-cover-frame sb-mb-30">
                       <img src="img/blog/5.jpg" alt="cover">
                     </div>
@@ -109,7 +109,7 @@
                   </a>
                 </div>
                 <div class="sb-grid-item sb-item-50">
-                  <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                  <a href="/blog-details" class="sb-blog-card sb-mb-30">
                     <div class="sb-cover-frame sb-cover-vert sb-mb-30">
                       <img src="img/blog/6.jpg" alt="cover">
                     </div>
@@ -121,7 +121,7 @@
                   </a>
                 </div>
                 <div class="sb-grid-item sb-item-50">
-                  <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                  <a href="/blog-details" class="sb-blog-card sb-mb-30">
                     <div class="sb-cover-frame sb-cover-vert sb-mb-30">
                       <img src="img/blog/3.jpg" alt="cover">
                       <div class="sb-badge">Popular</div>
@@ -134,7 +134,7 @@
                   </a>
                 </div>
                 <div class="sb-grid-item sb-item-50">
-                  <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                  <a href="/blog-details" class="sb-blog-card sb-mb-30">
                     <div class="sb-cover-frame sb-mb-30">
                       <img src="img/blog/2.jpg" alt="cover">
                     </div>
@@ -223,7 +223,7 @@
           <div class="swiper-container sb-blog-slider-3i">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                <a href="/blog-details" class="sb-blog-card sb-mb-30">
                   <div class="sb-cover-frame sb-mb-30">
                     <img src="img/blog/1.jpg" alt="cover">
                     <div class="sb-badge">Popular</div>
@@ -236,7 +236,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                <a href="/blog-details" class="sb-blog-card sb-mb-30">
                   <div class="sb-cover-frame sb-mb-30">
                     <img src="img/blog/4.jpg" alt="cover">
                     <div class="sb-badge">Popular</div>
@@ -249,7 +249,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                <a href="/blog-details" class="sb-blog-card sb-mb-30">
                   <div class="sb-cover-frame sb-mb-30">
                     <img src="img/blog/5.jpg" alt="cover">
                     <div class="sb-badge">Popular</div>
@@ -262,7 +262,7 @@
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="publication-1.html" class="sb-blog-card sb-mb-30">
+                <a href="/blog-details" class="sb-blog-card sb-mb-30">
                   <div class="sb-cover-frame sb-mb-30">
                     <img src="img/blog/6.jpg" alt="cover">
                     <div class="sb-badge">Popular</div>
