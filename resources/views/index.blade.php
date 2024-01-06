@@ -396,7 +396,7 @@
               <div class="swiper-slide">
                 <div class="sb-review-card">
                   <div class="sb-review-header sb-mb-15">
-                    <h4 class="sb-mb-15">Starbelly is amazing!</h4>
+                    <h4 class="sb-mb-15">Cheffemi is amazing!</h4>
                     <ul class="sb-stars">
                       <li><i class="fas fa-star"></i></li>
                       <li><i class="fas fa-star"></i></li>

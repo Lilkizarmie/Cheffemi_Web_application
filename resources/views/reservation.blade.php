@@ -124,7 +124,7 @@
                 <div class="sb-number">03</div>
                 <div class="sb-feature-text">
                   <h3 class="sb-mb-15">Write</h3>
-                  <p class="sb-text">starbelly@mail.com</p>
+                  <p class="sb-text">Cheffemi@mail.com</p>
                 </div>
               </div>
             </div>

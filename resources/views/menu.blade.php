@@ -894,7 +894,7 @@
               <div class="sb-promo-frame sb-mb-30">
                 <div class="sb-promo-content">
                   <div class="sb-text-frame">
-                    <h3 class="sb-mb-15">Visit Starbelly and get your coffee*</h3>
+                    <h3 class="sb-mb-15">Visit Cheffemi and get your coffee*</h3>
                     <h3 class="sb-mb-10"><b class="sb-h2">For free!</b></h3>
                     <p class="sb-text sb-text-sm sb-mb-15">*Et modi itaque praesentium.</p>
                     <!-- button -->

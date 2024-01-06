@@ -57,7 +57,7 @@
                 <div class="sb-top-bar">
                     <a href="/" class="sb-logo-frame">
                         <!-- logo img -->
-                        <img src="img/ui/logo.png" alt="Starbelly">
+                        <img src="img/ui/logo.png" alt="Cheffemi">
                     </a>
                     <!-- menu -->
                     <div class="sb-right-side">

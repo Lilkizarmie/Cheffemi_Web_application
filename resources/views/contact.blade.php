@@ -14,7 +14,7 @@
               <div class="sb-main-title-frame">
                 <div class="sb-main-title">
                   <span class="sb-suptitle sb-mb-30">Contact</span>
-                  <h1 class="sb-mb-30">Get in <span>Touch with Starbelly</span></h1>
+                  <h1 class="sb-mb-30">Get in <span>Touch with Cheffemi</span></h1>
                   <p class="sb-text sb-text-lg sb-mb-30">Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.</p>
                   <ul class="sb-breadcrumbs">
                     <li><a href="home-1.html">Home</a></li>
@@ -111,7 +111,7 @@
                 <div class="sb-number">03</div>
                 <div class="sb-feature-text">
                   <h3 class="sb-mb-15">Write</h3>
-                  <p class="sb-text">starbelly@mail.com</p>
+                  <p class="sb-text">Cheffemi@mail.com</p>
                 </div>
               </div>
             </div>

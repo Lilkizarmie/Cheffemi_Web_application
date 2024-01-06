@@ -103,7 +103,7 @@
             <div class="sb-grid-item sb-item-50">
               <div class="sb-review-card sb-mb-60">
                 <div class="sb-review-header sb-mb-15">
-                  <h4 class="sb-mb-10">Starbelly is amazing!</h4>
+                  <h4 class="sb-mb-10">Cheffemi is amazing!</h4>
                   <ul class="sb-stars">
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
@@ -190,7 +190,7 @@
             <div class="sb-grid-item sb-item-50">
               <div class="sb-review-card sb-mb-60">
                 <div class="sb-review-header sb-mb-15">
-                  <h4 class="sb-mb-10">Starbelly is amazing!</h4>
+                  <h4 class="sb-mb-10">Cheffemi is amazing!</h4>
                   <ul class="sb-stars">
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>

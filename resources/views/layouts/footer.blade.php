@@ -42,7 +42,7 @@
 <script src="js/plugins/mapbox.min.js"></script>
 <!-- fancybox js -->
 <script src="js/plugins/fancybox.min.js"></script>
-<!-- starbelly js -->
+<!-- Cheffemi js -->
 <script src="js/main.js"></script>
 
 </body>
