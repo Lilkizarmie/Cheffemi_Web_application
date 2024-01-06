@@ -2,9 +2,9 @@
  <footer>
   <div class="container">
     <div class="sb-footer-frame">
-      <a href="home.html" class="sb-logo-frame">
+      <a href="/" class="sb-logo-frame">
         <!-- logo img -->
-        <img src="img/ui/logo.png" alt="Starbelly">
+        <img src="img/ui/logo.png" alt="Cheffemi">
       </a>
       <ul class="sb-social">
         <li><a href="#."><i class="fab fa-twitter"></i></a></li>

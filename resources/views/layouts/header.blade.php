@@ -45,7 +45,9 @@
         </div>
         <!-- preloader end -->
         <!-- click effect -->
-        <div class="sb-click-effect"></div>
+        <div class="sb-click-effect">
+            
+        </div>
         <!-- loader -->
         <div class="sb-load"></div>
         <!-- top bar -->
@@ -53,7 +55,7 @@
             <div class="sb-top-bar-bg"></div>
             <div class="container">
                 <div class="sb-top-bar">
-                    <a href="index.html" class="sb-logo-frame">
+                    <a href="/" class="sb-logo-frame">
                         <!-- logo img -->
                         <img src="img/ui/logo.png" alt="Starbelly">
                     </a>
@@ -61,27 +63,30 @@
                     <div class="sb-right-side">
                         <nav id="sb-dynamic-menu" class="sb-menu-transition">
                             <ul class="sb-navigation">
-                                <li class="@if (request()->is('/')) sb-active @endif sb-has-children">
+                                <li class="@if (request()->is('/')) sb-active @endif">
                                     <a href="{{ url('/') }}">Home</a>
                                 </li>
-                                <li class="@if (request()->is('about')) sb-active @endif sb-has-children">
+                                <li class="@if (request()->is('about')) sb-active @endif ">
                                     <a href="{{ url('/about') }}">About</a>
                                 </li>
-                                <li class="@if (request()->is('gallery')) sb-active @endif sb-has-children">
+                                <li class="@if (request()->is('gallery')) sb-active @endif">
                                     <a href="{{ url('/gallery') }}">Gallery</a>
                                 </li>
-                                <li class="@if (request()->is('shop')) sb-active @endif sb-has-children">
-                                    <a href="{{ url('/shop') }}">Shop</a>
+                                <li class="@if (request()->is('shop')) sb-active @endif">
+                                    <a href="#">Shop</a>
                                     <ul>
-                                        <li class="@if (request()->is('menu')) sb-active @endif sb-has-children">
+                                        <li class="@if (request()->is('menu')) sb-active @endif">
+                                          <a href="{{ url('/shop') }}">Shop</a>
+                                        </li>
+                                        <li class="@if (request()->is('menu')) sb-active @endif">
                                           <a href="{{ url('/menu') }}">Menu</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="@if (request()->is('blog')) sb-active @endif sb-has-children">
+                                <li class="@if (request()->is('blog')) sb-active @endif">
                                     <a href="{{ url('/blog') }}">Blog</a>
                                 </li>
-                                <li class="@if (request()->is('contact')) sb-active @endif sb-has-children">
+                                <li class="@if (request()->is('contact')) sb-active @endif">
                                     <a href="{{ url('/contact') }}">Contact</a>
                                 </li>
                             </ul>
